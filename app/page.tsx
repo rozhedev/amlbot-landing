@@ -1,6 +1,10 @@
-import Header from "@/ui/Header";
-import Promo from "@/ui/Promo";
-import TrustpilotSect from "@/ui/TrustpilotSect";
+import Header from "@/components/Header";
+import Promo from "@/components/Promo";
+import TrustpilotSect from "@/components/TrustpilotSect";
+import Partners from "@/components/Partners";
+import Statistics from "@/components/Statistics";
+import ServicesSect from "@/components/Services";
+import IsoCertification from "@/components/IsoSertification";
 
 export default function Home() {
     return (
@@ -8,6 +12,10 @@ export default function Home() {
             <Header />
             <Promo />
             <TrustpilotSect />
+            <Partners />
+            <Statistics />
+            <ServicesSect />
+            <IsoCertification />
         </div>
     );
 }
