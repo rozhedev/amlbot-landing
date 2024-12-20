@@ -20,11 +20,11 @@ const Promo = () => {
                 </div>
 
                 {/* Блок изображения */}
-                <div className="lg:w-[75%] bg-transparent flex justify-center">
+                <div className="lg:w-[75%] bg-transparent flex justify-center ml-20">
                     <Image
                         src={promoMockup} /* Замените на реальный скриншот */
                         alt="Product Dashboard"
-                        className="w-full max-w-5xl -mr-20"
+                        className="w-full max-w-5xl "
                     />
                 </div>
             </div>

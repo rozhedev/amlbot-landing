@@ -5,6 +5,9 @@ import Partners from "@/components/Partners";
 import Statistics from "@/components/Statistics";
 import ServicesSect from "@/components/Services";
 import IsoCertification from "@/components/IsoSertification";
+import PricingBanner from "@/components/PricingBanner";
+import Advantages from "@/components/Advantages";
+import TeamSect from "@/components/TeamSect";
 
 export default function Home() {
     return (
@@ -16,6 +19,9 @@ export default function Home() {
             <Statistics />
             <ServicesSect />
             <IsoCertification />
+            <PricingBanner />
+            <Advantages />
+            <TeamSect />
         </div>
     );
 }

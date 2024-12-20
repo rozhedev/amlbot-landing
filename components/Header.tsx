@@ -16,7 +16,6 @@ const Header = () => {
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 160 33"
-                        aria-label="AMLBot"
                         style={{
                             maxWidth: 180,
                             maxHeight: 90,
@@ -30,9 +29,9 @@ const Header = () => {
                         ></path>
                         <path
                             fill="#0057FF"
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M14.555 1.543c-1.43-2.105-4.566-2.046-5.915.112L.531 14.63a3.49 3.49 0 0 0 .037 3.759l8.487 13.014c1.39 2.13 4.526 2.13 5.915 0l8.462-12.975a3.49 3.49 0 0 0-.036-3.87L14.555 1.543Zm.968 7.687c-.305 5.437-4.595 9.816-10.012 10.294l6.502 9.97 8.462-12.974-4.952-7.29Z"
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                         ></path>
                     </svg>
                 </div>
@@ -81,7 +80,7 @@ const Header = () => {
                 <ul
                     className={`${
                         isMenuOpen ? "flex" : "hidden"
-                    } absolute top-[75px] left-0 w-full bg-white flex-col items-center justify-center space-y-4 text-gray-600 md:relative md:flex md:flex-row md:space-x-8 md:space-y-0 md:top-0 md:bg-transparent`}
+                    } absolute top-[75px] left-0 w-full bg-white flex-col items-center justify-center space-y-4 text-gray-900 md:relative md:flex md:flex-row md:space-x-8 md:space-y-0 md:top-0 md:bg-transparent`}
                 >
                     <li className="hover:text-black cursor-pointer">Продукты</li>
                     <li className="hover:text-black cursor-pointer">Стоимость</li>

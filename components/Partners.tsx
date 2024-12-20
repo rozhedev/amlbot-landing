@@ -31,7 +31,7 @@ const Partners = () => {
             <div className="relative mx-auto px-4">
                 <h2 className="text-4xl font-black text-center mb-12">Наши 300+ клиентов и партнеров</h2>
 
-                <div className="absolute -left-32 flex items-center justify-between gap-6 overflow-x-auto pb-4">
+                <div className="absolute -left-32 flex items-center justify-between gap-6 overflow-x-hidden pb-4">
                     {partners.map((partner, index) => (
                         <div
                             key={index}
