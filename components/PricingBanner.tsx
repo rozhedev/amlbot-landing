@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import bgPriceBanner from "@/public/img/bg-price-banner.webp";
 

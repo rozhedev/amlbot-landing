@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import target from "@/public/icons/target.webp";
 import starDark from "@/public/icons/star-darken.webp";

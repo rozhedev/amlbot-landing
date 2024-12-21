@@ -8,6 +8,8 @@ import IsoCertification from "@/components/IsoSertification";
 import PricingBanner from "@/components/PricingBanner";
 import Advantages from "@/components/Advantages";
 import TeamSect from "@/components/TeamSect";
+import FAQSect from "@/components/FAQSect";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -22,6 +24,8 @@ export default function Home() {
             <PricingBanner />
             <Advantages />
             <TeamSect />
+            <FAQSect />
+            <Footer />
         </div>
     );
 }

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import chain from "@/public/icons/chain.webp";
 import portfolio from "@/public/icons/portfolio.webp";

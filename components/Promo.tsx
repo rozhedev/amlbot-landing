@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import promoMockup from "@/public/products/promo_mockup.webp";
@@ -8,10 +9,13 @@ const Promo = () => {
             <div className="container mx-auto px-6 lg:flex lg:items-center lg:justify-between">
                 {/* Текстовый блок */}
                 <div className="lg:w-1/2 mb-10 lg:mb-0">
-                    <h2 className="text-6xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
+                    <h2 className="text-6xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
                         Комплексный <br /> комплаенс продукт <br /> для крипто бизнеса
                     </h2>
-                    <p className="text-gray-900 text-2xl font-medium mb-8">AMLBot автоматизирует AML / KYC <br /> процедуры и снижает расходы на <br />соблюдение требований законодательства.</p>
+                    <p className="text-gray-900 text-2xl font-medium mb-8">
+                        AMLBot автоматизирует AML / KYC <br /> процедуры и снижает расходы на <br />
+                        соблюдение требований законодательства.
+                    </p>
                     {/* Кнопки */}
                     <div className="flex space-x-4">
                         <button className="bg-blue-600 text-white py-4 px-6 rounded-full text-lg font-bold hover:bg-blue-700 transition">Запросить демо</button>

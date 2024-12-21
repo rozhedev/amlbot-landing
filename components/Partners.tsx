@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import BoxExchanger from "@/public/partners/boxexchanger.webp";
@@ -18,7 +19,7 @@ const Partners = () => {
         { label: "Credits", img: Credits },
         { label: "CryptoPNL", img: CryptoNPL },
         { label: "Gate.io", img: GateIO },
-        
+
         { label: "Kuna IO", img: KunaIO },
         { label: "LetsExchange", img: LetsExchange },
         { label: "Misttrack", img: Misttrack },
