@@ -12,26 +12,26 @@ const FAQSect = () => {
 
     return (
         <div className="bg-gray-100">
-            <div className="pt-12 pb-20 px-6">
+            <div className="pt-32 pb-32 px-6">
                 <div className="mx-auto max-w-7xl">
-                    <h1 className="text-4xl font-bold mb-8">Популярные вопросы</h1>
+                    <h1 className="text-5xl text-center font-bold mb-20">Популярные вопросы</h1>
                 </div>
 
-                <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-[350px,1fr] gap-6">
+                <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-[350px,1fr] gap-24">
                     {/* Left Side - Contact Box */}
-                    <div className="bg-blue-50 rounded-lg p-6 h-fit">
-                        <h2 className="text-xl font-medium mb-2">Ваш вопрос отсутствует в списке?</h2>
-                        <p className="text-gray-600 mb-6">Свяжитесь с нами через мессенджер. Мы на связи 24/7, поэтому любой вопрос можем решить быстро и в формате живого общения.</p>
+                    <div className="bg-blue-50 rounded-2xl py-9 px-7 h-fit">
+                        <h2 className="text-gray-800 text-2xl font-semibold mb-2">Ваш вопрос отсутствует в списке?</h2>
+                        <p className="text-lg text-gray-600 mb-6">Свяжитесь с нами через мессенджер. Мы на связи <span className="font-semibold">24/7</span>, поэтому любой вопрос можем решить быстро и в формате живого общения.</p>
 
-                        <button className="flex items-center gap-2 bg-white text-blue-500 px-4 py-2 rounded-lg">
-                            <ChatBubbleLeftIcon className="w-5 h-5" />
-                            <div className="text-left">
-                                <div>Мы в мессенджере</div>
-                                <div className="text-sm text-gray-500">Ответим в течение 30 сек</div>
+                        <button className="flex items-center gap-2 bg-white text-blue-500 px-4 py-2 rounded-xl">
+                            <ChatBubbleLeftIcon className="w-6 h-6" />
+                            <div className="text-left ml-1">
+                                <div className="text-lg font-medium">Мы в мессенджере</div>
+                                <div className="text-xs font-medium text-gray-400">Ответим в течение 30 сек</div>
                             </div>
                         </button>
 
-                        <p className="text-sm text-gray-500 mt-4">Ответ в ночное время может занять чуть больше времени.</p>
+                        <p className="text-[13px] font-medium text-gray-600 mt-4">Ответ в ночное время может занять чуть больше времени.</p>
                     </div>
 
                     {/* Right Side - FAQ Accordion */}
@@ -42,14 +42,14 @@ const FAQSect = () => {
                                 className="border-b border-gray-200"
                             >
                                 <button
-                                    className="w-full flex justify-between items-center py-4"
+                                    className="w-full flex justify-between items-center pt-4 pb-6 focus:ring-0"
                                     onClick={() => toggleAccordion(item.id)}
                                 >
-                                    <span className="text-lg font-medium text-left">{item.question}</span>
-                                    <ChevronDownIcon className={`w-5 h-5 transition-transform ${openItems.includes(item.id) ? "rotate-180" : ""}`} />
+                                    <span className="text-2xl font-medium text-left">{item.question}</span>
+                                    <ChevronDownIcon className={`w-8 h-8 transition-transform ${openItems.includes(item.id) ? "rotate-180" : ""}`} />
                                 </button>
 
-                                {openItems.includes(item.id) && <div className="pb-4 text-gray-600 whitespace-pre-line">{item.answer}</div>}
+                                {openItems.includes(item.id) && <div className="pb-4 text-xl text-gray-500 whitespace-pre-line">{item.answer}</div>}
                             </div>
                         ))}
                     </div>

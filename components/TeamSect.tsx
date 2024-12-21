@@ -39,7 +39,7 @@ const TeamSect = () => {
     return (
         <div className="bg-gray-100 py-16">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-5xl md:text-4xl font-black text-center mb-10">Наша команда</h2>
+                <h2 className="text-5xl font-black text-center mb-12">Наша команда</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {teamMembers.map((member, index) => (
                         <div

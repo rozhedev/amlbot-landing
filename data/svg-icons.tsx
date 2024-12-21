@@ -5,7 +5,6 @@ const SVG_ICONS = {
     trustpilot: (
         <svg
             role="img"
-            className="w-32"
             aria-labelledby="trustpilotLogo-vwqemqxkq29"
             viewBox="0 0 126 31"
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +67,22 @@ const SVG_ICONS = {
             ></path>
         </svg>
     ),
-        
+    checkmark: (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4.5 12.75l6 6 9-13.5"
+            />
+        </svg>
+    ),
 };
 
-export const { trustpilot, trustpilotStar, trustpilotHalfStar } = SVG_ICONS;
+export const { trustpilot, trustpilotStar, trustpilotHalfStar, checkmark } = SVG_ICONS;
