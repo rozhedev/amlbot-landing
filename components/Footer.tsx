@@ -1,227 +1,78 @@
 import React from "react";
 import Link from "next/link";
+import { logoDark, telegram } from "@/data/svg-icons";
+import isoSertified1 from "@/public/img/iso-sertified-1.svg";
+import isoSertified2 from "@/public/img/iso-sertified-2.svg";
+import Image from "next/image";
+import TrustpilotBadge from "./TrustpilotBadge";
+import NavColumn from "./NavColumns";
+import { FOOTER_COL_TITLES, FOOTER_LINKS } from "@/data/footer-links";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-gray-400 py-16">
             <div className="max-w-7xl mx-auto px-4">
-                {/* Header Section */}
-                <div className="flex flex-wrap justify-between items-start mb-16">
+                <div className="flex flex-wrap justify-between items-start mb-16 border-b border-gray-800">
                     {/* Logo and Address */}
-                    <div className="w-full md:w-auto mb-8 md:mb-0">
+                    <div className="flex  items-start gap-20 mb-8">
                         <Link
                             href="/"
                             className="flex items-center mb-4"
                         >
-                            <div className="text-white text-2xl font-bold mr-2">◆</div>
-                            <div className="text-white text-2xl font-bold">AMLBot</div>
+                            <div className="flex items-center justify-center lg:w-40  md:w-32 h-auto">{logoDark}</div>
                         </Link>
                         <div className="text-sm max-w-xs">
-                            <div className="text-gray-500 font-medium mb-2">SAFELEMENT LIMITED.</div>
-                            <div>OFFICE 1111, SUITE 1102, LEE GARDEN ONE, 33 HYSAN AVENUE, CAUSEWAY BAY, HONG KONG</div>
+                            <div className="text-[16px] text-gray-400 font-extrabold mb-2 uppercase">SAFELEMENT LIMITED.</div>
+                            <div className="uppercase text-gray-400"> OFFICE 1111, SUITE 1102, LEE GARDEN ONE, 33 HYSAN AVENUE, CAUSEWAY BAY, HONG KONG</div>
                         </div>
                     </div>
 
                     {/* Certificates and Rating */}
-                    <div className="flex items-center gap-6">
-                        <div className="flex gap-4">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xs text-black">ISO</div>
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xs text-black">ISO</div>
+                    <div className="flex items-center gap-10">
+                        <div className="gap-6 flex items-center justify-center">
+                            <Image
+                                src={isoSertified1}
+                                alt="iso-sertified-1"
+                                className="w-[70px] h-auto flex items-center justify-center"
+                            />
+                            <Image
+                                src={isoSertified2}
+                                alt="iso-sertified-2"
+                                className="w-[70px] h-auto flex items-center justify-center"
+                            />
                         </div>
-                        <div>
-                            <div className="flex items-center gap-1 mb-1">
-                                <span className="text-white">Trustpilot</span>
-                                <div className="flex">
-                                    {[1, 2, 3, 4, 5].map((star) => (
-                                        <div
-                                            key={star}
-                                            className="w-4 h-4 bg-green-500"
-                                        ></div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="text-sm">4.5 out of 5</div>
-                        </div>
+                        <TrustpilotBadge
+                            labelColor="#fff"
+                            isDark={true}
+                        />
                     </div>
                 </div>
 
                 {/* Navigation Columns */}
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
                     {/* For Business */}
-                    <div>
-                        <h3 className="text-white uppercase mb-4 text-sm">для бизнеса</h3>
-                        <ul className="space-y-3">
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    KYT
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    KYC
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    AMLBot <span className="px-1.5 py-0.5 bg-purple-600 rounded-md text-xs text-white">PRO</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    AML Тренинг
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Консалтинг
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <NavColumn
+                        label={FOOTER_COL_TITLES[0]}
+                        linksArr={FOOTER_LINKS.forBusiness}
+                    />
 
                     {/* For Personal Use */}
-                    <div>
-                        <h3 className="text-white uppercase mb-4 text-sm">для личного пользования</h3>
-                        <ul className="space-y-3">
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    AML Чат-бот
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Мобильное приложение
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Расследование
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <NavColumn
+                        label={FOOTER_COL_TITLES[1]}
+                        linksArr={FOOTER_LINKS.forPersonal}
+                    />
 
                     {/* Company */}
-                    <div>
-                        <h3 className="text-white uppercase mb-4 text-sm">компания</h3>
-                        <ul className="space-y-3">
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    О нас
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Анализ
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Сертификаты
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Блог
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="hover:text-white transition-colors"
-                                >
-                                    Пресс-кит
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <NavColumn
+                        label={FOOTER_COL_TITLES[2]}
+                        linksArr={FOOTER_LINKS.company}
+                    />
 
                     {/* Social Media */}
-                    <div>
-                        <h3 className="text-white uppercase mb-4 text-sm">социальные сети</h3>
-                        <ul className="space-y-3">
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <span className="w-6 h-6 flex items-center justify-center bg-gray-800 rounded-full">T</span>
-                                    Telegram
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <span className="w-6 h-6 flex items-center justify-center bg-gray-800 rounded-full">in</span>
-                                    LinkedIn
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <span className="w-6 h-6 flex items-center justify-center bg-gray-800 rounded-full">X</span>X
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <span className="w-6 h-6 flex items-center justify-center bg-gray-800 rounded-full">▶</span>
-                                    YouTube
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
-                                >
-                                    <span className="w-6 h-6 flex items-center justify-center bg-gray-800 rounded-full">M</span>
-                                    Medium
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    <NavColumn
+                        label={FOOTER_COL_TITLES[3]}
+                        linksArr={FOOTER_LINKS.social}
+                    />
                 </div>
 
                 {/* Footer Bottom */}
@@ -230,10 +81,10 @@ const Footer = () => {
                         <div>© 2024 AMLBot</div>
                         <Link
                             href="/"
-                            className="px-4 py-2 bg-gray-800 rounded-lg flex items-center gap-2 hover:bg-gray-700 transition-colors"
+                            className="px-4 py-2 bg-gray-700 flex items-center gap-2 hover:bg-gray-700 transition-colors rounded-full"
                         >
-                            <span className="w-4 h-4 flex items-center justify-center">✉</span>
-                            Поддержка
+                            <div className="w-5 h-5">{telegram}</div>
+                            <span className="font-semibold text-white">Поддержка</span>
                         </Link>
                     </div>
                     <div className="flex gap-6">

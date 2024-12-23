@@ -4,7 +4,7 @@ import { ChatBubbleLeftIcon, ChevronDownIcon } from "@heroicons/react/24/outline
 import { faqData } from "@/data/faq";
 
 const FAQSect = () => {
-    const [openItems, setOpenItems] = useState<number[]>([1]);
+    const [openItems, setOpenItems] = useState<number[]>([0]);
 
     const toggleAccordion = (id: number) => {
         setOpenItems((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]));
@@ -12,7 +12,7 @@ const FAQSect = () => {
 
     return (
         <div className="bg-gray-100">
-            <div className="pt-32 pb-32 px-6">
+            <div className="pt-32 pb-36 px-6">
                 <div className="mx-auto max-w-7xl">
                     <h1 className="text-5xl text-center font-bold mb-20">Популярные вопросы</h1>
                 </div>

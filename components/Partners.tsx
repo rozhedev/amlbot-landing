@@ -40,7 +40,7 @@ const Partners = () => {
                         >
                             <Image
                                 src={partner.img}
-                                alt={`${partner.label} logo`}
+                                alt={`${partner.label} logoLight`}
                                 className="w-auto h-16 object-contain"
                             />
                         </div>
