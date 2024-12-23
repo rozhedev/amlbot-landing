@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import bgPriceBanner from "@/public/img/bg-price-banner.webp";
+import ArrowBtn from "./ui/ArrowBtn";
 
-const PricingBanner = () => {
+export const PricingBanner = () => {
     return (
         <section className="w-full bg-gray-100 py-16 px-4">
             <div className="max-w-5xl mx-auto">
                 <div
-                    style={{ backgroundImage: `url(${bgPriceBanner})` }}
-                    className="bg-white bg-cover bg-right rounded-3xl shadow-md p-8 md:p-12 relative overflow-hidden"
+                    className={`bg-white bg-[url('../public/img/bg-price-banner.webp')] bg-right-bottom bg-contain bg-no-repeat rounded-3xl shadow-md p-8 md:p-12 relative`}
                 >
                     {/* Content */}
                     <div className="relative z-10 max-w-xl">
@@ -21,10 +20,10 @@ const PricingBanner = () => {
                                 <span className="text-gray-500 text-3xl font-medium ml-2">/ за проверку</span>
                             </div>
                         </div>
-                        <button className="group mt-8 flex items-center text-lg font-bold transition-all duration-300 text-black hover:text-blue-600">
-                            Свяжитесь с нами
-                            <span className="ml-2 text-lg font-bold transform transition-transform duration-300 group-hover:translate-x-1">→</span>
-                        </button>
+                        <ArrowBtn
+                            label="Свяжитесь с нами"
+                            btnTextColor="text-lg mt-16 text-black hover:text-blue-600"
+                        />
                     </div>
                 </div>
                 <div className="mt-32 mb-24 text-center font-medium text-2xl leading-normal">
@@ -37,5 +36,3 @@ const PricingBanner = () => {
         </section>
     );
 };
-
-export default PricingBanner;

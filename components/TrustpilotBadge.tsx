@@ -2,9 +2,9 @@
 import { trustpilotLight, trustpilotHalfStar, trustpilotDark } from "@/data/svg-icons";
 import React, { FC } from "react";
 
-type TTrustpilotBadge = { isDark: boolean, labelColor: string };
+type TTrustpilotBadge = { isDark: boolean; labelColor: string };
 
-const TrustpilotBadge: FC<TTrustpilotBadge> = ({ labelColor, isDark }) => {
+export const TrustpilotBadge: FC<TTrustpilotBadge> = ({ labelColor, isDark }) => {
     return (
         <div>
             <div className="w-32">{isDark ? trustpilotDark : trustpilotLight}</div>
@@ -38,5 +38,3 @@ const TrustpilotBadge: FC<TTrustpilotBadge> = ({ labelColor, isDark }) => {
         </div>
     );
 };
-
-export default TrustpilotBadge;

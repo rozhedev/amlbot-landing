@@ -3,8 +3,9 @@ import Image from "next/image";
 import target from "@/public/icons/target.webp";
 import starDark from "@/public/icons/star-darken.webp";
 import plainWithRound from "@/public/icons/plain_with_round.webp";
+import ArrowBtn from "./ui/ArrowBtn";
 
-export default function Advantages() {
+export const Advantages = () => {
     return (
         <section className="bg-gray-100 pt-8 pb-28">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -73,11 +74,11 @@ export default function Advantages() {
                             <div>
                                 <h3 className="text-3xl font-extrabold text-gray-900">Поддержка клиентов</h3>
                                 <p className="mt-3 text-xl">Мы понимаем, насколько важна быстрая и дружелюбная поддержка наших клиентов, поэтому мы всегда рядом. Поддержка 24/7.</p>
-                                <p className="text-lg text-gray-500 mt-2">Ответ в ночное время может занять немного больше времени.</p>
-                                <button className="group mt-16 flex items-center text-lg font-bold transition-all duration-300 text-blue-600 hover:text-blue-700">
-                                    Связаться
-                                    <span className="ml-2 text-lg font-bold transform transition-transform duration-300 group-hover:translate-x-1">→</span>
-                                </button>
+                                <p className=" text-gray-500 mt-2">Ответ в ночное время может занять немного больше времени.</p>
+                                <ArrowBtn
+                                    label="Связаться"
+                                    btnTextColor="text-lg mt-16 text-blue-600 hover:text-blue-700"
+                                />
                             </div>
                         </div>
                     </div>

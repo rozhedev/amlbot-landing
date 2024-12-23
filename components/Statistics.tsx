@@ -5,7 +5,7 @@ import BinanceWhiteLogo from "@/public/icons/binance-white-logo.svg";
 import OkxWhiteLogo from "@/public/icons/okx-white-logo.svg";
 import HuobiWhiteLogo from "@/public/icons/huobi-white-logo.svg";
 
-const Statistics = () => {
+export const Statistics = () => {
     const content = [
         {
             value: "+$100 000 000",
@@ -57,5 +57,3 @@ const Statistics = () => {
         </section>
     );
 };
-
-export default Statistics;

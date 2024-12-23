@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ChatBubbleLeftIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { faqData } from "@/data/faq";
 
-const FAQSect = () => {
+export const FAQSect = () => {
     const [openItems, setOpenItems] = useState<number[]>([0]);
 
     const toggleAccordion = (id: number) => {
@@ -58,5 +58,3 @@ const FAQSect = () => {
         </div>
     );
 };
-
-export default FAQSect;

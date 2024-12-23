@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { logoLight } from "@/data/svg-icons";
 
-const Header = () => {
+export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -79,5 +79,3 @@ const Header = () => {
         </header>
     );
 };
-
-export default Header;

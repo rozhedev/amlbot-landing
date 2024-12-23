@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-import TrustpilotBadge from "./TrustpilotBadge";
+import { TrustpilotBadge } from "./TrustpilotBadge";
 import INATBA from "@/public/members/INATBA.png";
 import CDA from "@/public/members/CDA.png";
 import ATII from "@/public/members/ATII.png";
@@ -10,7 +10,7 @@ import LSW3 from "@/public/members/LSW3.png";
 import EBA from "@/public/members/EUBA.png";
 import { checkmark } from "@/data/svg-icons";
 
-const TrustpilotSection = () => {
+export const TrustpilotSect = () => {
     const memberNames = [
         {
             label: "INATBA",
@@ -38,7 +38,10 @@ const TrustpilotSection = () => {
         <section className="flex items-start justify-around pb-28 bg-gray-100">
             <div className="container flex items-center space-x-2 mb-4 lg:mb-0container mx-auto px-6 lg:flex lg:items-center lg:justify-around">
                 {/* // ? Trustpilot Rating */}
-                <TrustpilotBadge labelColor="#fff" isDark={false} />
+                <TrustpilotBadge
+                    labelColor="#fff"
+                    isDark={false}
+                />
 
                 {/* // ? Membership Badges */}
                 <div className="flex flex-col items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 px-4 py-6 rounded-[20px] border">
@@ -67,5 +70,3 @@ const TrustpilotSection = () => {
         </section>
     );
 };
-
-export default TrustpilotSection;

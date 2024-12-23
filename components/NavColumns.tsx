@@ -11,7 +11,7 @@ type TNavColumn = {
 };
 
 // TODO
-const NavColumn: FC<TNavColumn> = ({ label, linksArr }) => {
+export const NavColumn: FC<TNavColumn> = ({ label, linksArr }) => {
     return (
         <div>
             <h3 className="text-gray-100 uppercase mb-4 text-xs font-semibold tracking-wide">{label}</h3>
@@ -31,5 +31,3 @@ const NavColumn: FC<TNavColumn> = ({ label, linksArr }) => {
         </div>
     );
 };
-
-export default NavColumn;

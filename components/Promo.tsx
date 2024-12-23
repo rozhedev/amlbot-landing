@@ -2,8 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import promoMockup from "@/public/products/promo_mockup.webp";
+import ArrowBtn from "./ui/ArrowBtn";
 
-const Promo = () => {
+export const Promo = () => {
     return (
         <section className="pt-32 pb-16 bg-gray-100">
             <div className="container mx-auto px-6 lg:flex lg:items-center lg:justify-between">
@@ -16,24 +17,27 @@ const Promo = () => {
                         AMLBot автоматизирует AML / KYC <br /> процедуры и снижает расходы на <br />
                         соблюдение требований законодательства.
                     </p>
+
                     {/* Кнопки */}
-                    <div className="flex space-x-4">
-                        <button className="bg-blue-600 text-white py-4 px-6 rounded-full text-lg font-bold hover:bg-blue-700 transition">Запросить демо</button>
-                        <button className="text-gray-900 py-3 px-6 rounded-lg font-bold hover:underline">Чат-бот →</button>
+                    <div className="flex items-center space-x-4 gap-6">
+                        <button className="bg-blue-600 text-white py-5 px-7 rounded-full text-xl font-bold hover:bg-blue-700 transition-colors">Запросить демо</button>
+                        <ArrowBtn
+                            label="Чат-бот"
+                            btnTextColor="text-xl text-gray-900 hover:text-blue-700"
+                        />
                     </div>
                 </div>
 
                 {/* Блок изображения */}
                 <div className="lg:w-[75%] bg-transparent flex justify-center ml-20">
                     <Image
-                        src={promoMockup} /* Замените на реальный скриншот */
+                        src={promoMockup}
+                        priority={true}
                         alt="Product Dashboard"
-                        className="w-full max-w-5xl "
+                        className="w-full max-w-5xl"
                     />
                 </div>
             </div>
         </section>
     );
 };
-
-export default Promo;

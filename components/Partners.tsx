@@ -12,7 +12,7 @@ import Misttrack from "@/public/partners/misttrack.webp";
 import Purefi from "@/public/partners/purefi.webp";
 import Safe3 from "@/public/partners/safe3.webp";
 
-const Partners = () => {
+export const Partners = () => {
     const partners = [
         { label: "Box Exchanger", img: BoxExchanger },
         { label: "Comistar", img: Comistar },
@@ -50,5 +50,3 @@ const Partners = () => {
         </section>
     );
 };
-
-export default Partners;

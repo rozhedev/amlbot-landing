@@ -39,7 +39,6 @@ const SVG_ICONS = {
     trustpilotLight: (
         <svg
             role="img"
-            aria-labelledby="trustpilotLogo-vwqemqxkq29"
             viewBox="0 0 126 31"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -64,7 +63,6 @@ const SVG_ICONS = {
     trustpilotDark: (
         <svg
             role="img"
-            aria-labelledby="trustpilotLogo-vwqemqxkq29"
             viewBox="0 0 126 31"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -181,17 +179,17 @@ const SVG_ICONS = {
     twitterLight: (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision"
-            image-rendering="optimizeQuality"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            shapeRendering="geometricPrecision"
+            textRendering="geometricPrecision"
+            imageRendering="optimizeQuality"
+            fillRule="evenodd"
+            clipRule="evenodd"
             className="w-5 h-5"
             viewBox="0 0 512 462.799"
             fill="#000"
         >
             <path
-                fill-rule="nonzero"
+                fillRule="nonzero"
                 d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
             />
         </svg>
@@ -199,17 +197,17 @@ const SVG_ICONS = {
     twitterDark: (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            shape-rendering="geometricPrecision"
-            text-rendering="geometricPrecision"
-            image-rendering="optimizeQuality"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            shapeRendering="geometricPrecision"
+            textRendering="geometricPrecision"
+            imageRendering="optimizeQuality"
+            fillRule="evenodd"
+            clipRule="evenodd"
             className="w-5 h-5"
             viewBox="-50 -50 600 600"
             fill="#fff"
         >
             <path
-                fill-rule="nonzero"
+                fillRule="nonzero"
                 d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
             />
         </svg>
@@ -241,7 +239,7 @@ const SVG_ICONS = {
         >
             <g
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
             >
                 <g
                     transform="translate(-300.000000, -7442.000000)"

@@ -1,14 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 import { logoDark, telegram } from "@/data/svg-icons";
+import { FOOTER_COL_TITLES, FOOTER_LINKS } from "@/data/footer-links";
 import isoSertified1 from "@/public/img/iso-sertified-1.svg";
 import isoSertified2 from "@/public/img/iso-sertified-2.svg";
-import Image from "next/image";
-import TrustpilotBadge from "./TrustpilotBadge";
-import NavColumn from "./NavColumns";
-import { FOOTER_COL_TITLES, FOOTER_LINKS } from "@/data/footer-links";
 
-const Footer = () => {
+import { TrustpilotBadge } from "./TrustpilotBadge";
+import { NavColumn } from "./NavColumns";
+
+export const Footer = () => {
     return (
         <footer className="bg-black text-gray-400 py-16">
             <div className="max-w-7xl mx-auto px-4">
@@ -106,5 +108,3 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;
