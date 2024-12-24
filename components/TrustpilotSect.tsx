@@ -35,8 +35,8 @@ export const TrustpilotSect = () => {
     ];
 
     return (
-        <section className="flex items-start justify-around pb-28 bg-gray-100">
-            <div className="container flex items-center space-x-2 mb-4 lg:mb-0container mx-auto px-6 lg:flex lg:items-center lg:justify-around">
+        <section className="flex lg:justify-start justify-center md:pb-28 pb-20 bg-gray-100">
+            <div className="mx-auto container flex lg:flex-row flex-col lg:justify-around justify-between items-center mb-4 lg:mb-0 lg:mx-auto lg:px-6 px-0">
                 {/* // ? Trustpilot Rating */}
                 <TrustpilotBadge
                     labelColor="#fff"
@@ -44,13 +44,13 @@ export const TrustpilotSect = () => {
                 />
 
                 {/* // ? Membership Badges */}
-                <div className="flex flex-col items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 px-4 py-6 rounded-[20px] border">
-                    <div className="flex items-center space-x-2">
+                <div className="lg:mx-0 mx-4 flex flex-col items-center lg:space-y-0 space-y-4 lg:px-8 px-4 py-6 lg:mt-0 mt-8 border rounded-[20px]">
+                    <div className="flex sm:flex-row flex-col items-center space-x-2">
                         <div className="bg-green-500 text-white rounded-full p-1">{checkmark}</div>
-                        <span className="text-gray-800 font-semibold">Мы являемся полноправными участниками</span>
+                        <span className="sm:text-left text-center sm:mt-0 mt-4 text-gray-800 font-semibold">Мы являемся полноправными участниками</span>
                     </div>
 
-                    <div className="flex gap-5 pt-6">
+                    <div className="flex flex-wrap lg:space-between lg:gap-5 gap-6 pt-6">
                         {memberNames.map((item, index) => (
                             <div
                                 key={index}

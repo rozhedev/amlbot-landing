@@ -13,7 +13,7 @@ export const Statistics = () => {
         },
         {
             value: (
-                <div className="flex items-center gap-4">
+                <div className="flex sm:flex-row flex-col lg:justify-start justify-center items-center gap-5">
                     <Image
                         src={BinanceWhiteLogo}
                         alt="Binance"
@@ -40,16 +40,21 @@ export const Statistics = () => {
     ];
 
     return (
-        <section className="w-full bg-[#2563EB] py-24">
+        <section className="w-full bg-[#2e4cf7] xl:py-24 lg:py-20 py-16">
             <div className="container mx-auto px-8">
-                <div className="grid grid-cols-3 items-top gap-12">
+                <div className="lg:grid lg:grid-cols-3 flex flex-col items-center items-top lg:gap-10 gap-8">
                     {content.map((stat, index) => (
                         <div
                             key={index}
                             className="flex flex-col"
                         >
-                            <div className={`text-white text-5xl font-bold mb-6 ${index === 0 ? "font-black" : "font-semibold"}`}>{stat.value}</div>
-                            <p className="text-white text-2xl leading-relaxed max-w-md">{stat.description}</p>
+                            <div
+                                className={`text-white xl:text-5xl lg:text-4xl text-2xl font-bold xl:mb-6 mb-4 xl:text-start text-center ${index === 0 ? "font-black" : "font-semibold"}
+                                `}
+                            >
+                                {stat.value}
+                            </div>
+                            <p className="text-white xl:text-2xl lg:text-lg text-base leading-relaxed xl:text-start text-center max-w-md">{stat.description}</p>
                         </div>
                     ))}
                 </div>

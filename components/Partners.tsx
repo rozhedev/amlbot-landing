@@ -22,26 +22,26 @@ export const Partners = () => {
 
         { label: "Kuna IO", img: KunaIO },
         { label: "LetsExchange", img: LetsExchange },
-        { label: "Misttrack", img: Misttrack },
+        // { label: "Misttrack", img: Misttrack },
         { label: "Purefi", img: Purefi },
         { label: "Safe3", img: Safe3 },
     ];
 
     return (
         <section className="w-full min-h-96 bg-gray-100 pt-12 pb-16">
-            <div className="relative mx-auto px-4">
-                <h2 className="text-4xl font-black text-center mb-12">Наши 300+ клиентов и партнеров</h2>
+            <div className="relative  mx-auto px-4">
+                <h2 className="sect-title mb-12">Наши 300+ клиентов и партнеров</h2>
 
-                <div className="absolute -left-32 flex items-center justify-between gap-6 overflow-x-hidden pb-4">
+                <div className="md:absolute relative md:-left-32 -left-0 flex md:flex-nowrap flex-wrap items-center md:justify-between justify-around gap-6 overflow-x-hidden pb-4">
                     {partners.map((partner, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 bg-white rounded-2xl px-6 py-4"
+                            className="flex-shrink-0 bg-white rounded-2xl lg:px-6 lg:py-4 px-3 py-2"
                         >
                             <Image
                                 src={partner.img}
                                 alt={`${partner.label} logoLight`}
-                                className="w-auto h-16 object-contain"
+                                className="w-auto lg:h-16 h-12 object-contain"
                             />
                         </div>
                     ))}

@@ -9,7 +9,7 @@ export const Advantages = () => {
     return (
         <section className="bg-gray-100 pt-8 pb-28">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 className="text-5xl font-black text-gray-900 mb-10">Почему AMLBot?</h2>
+                <h2 className="sect-title text-gray-900 mb-10">Почему AMLBot?</h2>
                 <div className="grid grid-rows-7 grid-cols-10 gap-8">
                     {/* // --> Индивидуальный подход */}
                     <div className="row-span-3 col-span-10 bg-white rounded-3xl shadow-sm px-12 py-9">

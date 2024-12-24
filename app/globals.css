@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --black: #000000;
-  --grey: #323D46;
-  --primary-blue: #0055FF;
-  --foreground: #171717;
+    --background: #ffffff;
+    --black: #000000;
+    --grey: #323d46;
+    --primary-blue: #0055ff;
+    --foreground: #171717;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,13 +18,17 @@
 } */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+.sect-title {
+    @apply lg:text-4xl text-3xl font-black text-center;
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import { ArrowBtn } from "./ui";
 
+// TODO Create adaptive versions
 export const PricingBanner = () => {
     return (
         <section className="w-full bg-gray-100 py-16 px-4">

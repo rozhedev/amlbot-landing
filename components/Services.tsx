@@ -8,10 +8,10 @@ export const ServicesSect = () => {
     return (
         <section className="w-full bg-gray-100 py-32">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-5xl font-black text-center mb-4">AMLBot Сервисы</h2>
-                <p className="text-center mb-16 text-xl">Мы предоставляем полный пакет опций для безопасной работы с криптовалютой</p>
+                <h2 className="sect-title font-black mb-4">AMLBot Сервисы</h2>
+                <p className="text-center lg:mb-16 mb-12 lg:text-xl text-base">Мы предоставляем полный пакет опций для безопасной работы с криптовалютой</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-2 gap-6">
                     {servicesContent.map((item, index) => (
                         <div
                             key={index}

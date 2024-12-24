@@ -11,12 +11,12 @@ export const Header = () => {
 
     return (
         <header className="fixed bg-white top-0 left-0 w-full shadow-sm z-50">
-            <nav className="container h-[90px] mx-auto flex items-center justify-between py-3 px-6">
+            <nav className="container lg:h-[90px] h-[72px] mx-auto flex items-center justify-between py-3 px-6">
                 {/* Логотип */}
-                <div className="flex items-center justify-center max-w-44 w-full h-auto">{logoLight}</div>
+                <div className="flex items-center justify-center xl:max-w-44 lg:max-w-36 max-w-32 w-full h-auto">{logoLight}</div>
 
                 {/* Гамбургер-кнопка для мобильных устройств */}
-                <div className="md:hidden flex items-center">
+                <div className="lg:hidden flex items-center">
                     <button
                         onClick={toggleMenu}
                         className="text-gray-800 hover:text-black focus:outline-none"
@@ -59,7 +59,7 @@ export const Header = () => {
                 <ul
                     className={`${
                         isMenuOpen ? "flex" : "hidden"
-                    } absolute top-[75px] left-0 w-full bg-white flex-col items-center justify-center space-y-4 text-gray-900 md:relative md:flex md:flex-row md:space-x-8 md:space-y-0 md:top-0 md:bg-transparent`}
+                    } absolute top-[72px] left-0 w-full bg-white flex-col items-center justify-center space-y-4 text-gray-900 lg:relative lg:flex lg:flex-row lg:space-x-8 lg:space-y-0 lg:top-0 lg:bg-transparent lg:pt-0 pt-4 lg:pb-0 pb-6`}
                 >
                     <li className="hover:text-black cursor-pointer">Продукты</li>
                     <li className="hover:text-black cursor-pointer">Стоимость</li>
@@ -70,9 +70,8 @@ export const Header = () => {
                 </ul>
 
                 {/* Кнопки */}
-                <div className="hidden md:flex items-center space-x-6 ">
-                    <button className="text-gray-800 hover:text-black font-medium">Войти</button>
-                    <button className="bg-black w-40 text-white py-2 px-4 font-medium rounded-full hover:bg-gray-800 transition">Создать аккаунт</button>
+                <div className="hidden lg:flex items-center space-x-6">
+                    <button className="min-w-48 inline-flex justify-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 font-medium rounded-full transition">Проверить кошелёк</button>
                     <div className="text-gray-700 font-medium cursor-pointer">RU</div>
                 </div>
             </nav>
