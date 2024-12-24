@@ -10,7 +10,6 @@ type TNavColumn = {
     }[];
 };
 
-// TODO
 export const NavColumn: FC<TNavColumn> = ({ label, linksArr }) => {
     return (
         <div>

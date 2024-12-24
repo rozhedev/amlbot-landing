@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { servicesContent } from "@/data/services";
-import ArrowBtn from "./ui/ArrowBtn";
+import { ArrowBtn } from "./ui";
 
 export const ServicesSect = () => {
     return (

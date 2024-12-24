@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { TrustpilotBadge } from "./TrustpilotBadge";
+import { TrustpilotBadge } from "./ui/TrustpilotBadge";
 import INATBA from "@/public/members/INATBA.png";
 import CDA from "@/public/members/CDA.png";
 import ATII from "@/public/members/ATII.png";

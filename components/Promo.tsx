@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import promoMockup from "@/public/products/promo_mockup.webp";
-import ArrowBtn from "./ui/ArrowBtn";
+import { ArrowBtn } from "./ui";
 
 export const Promo = () => {
     return (

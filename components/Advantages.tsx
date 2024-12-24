@@ -3,7 +3,7 @@ import Image from "next/image";
 import target from "@/public/icons/target.webp";
 import starDark from "@/public/icons/star-darken.webp";
 import plainWithRound from "@/public/icons/plain_with_round.webp";
-import ArrowBtn from "./ui/ArrowBtn";
+import { ArrowBtn } from "./ui";
 
 export const Advantages = () => {
     return (
@@ -86,4 +86,4 @@ export const Advantages = () => {
             </div>
         </section>
     );
-}
+};

@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
-import ArrowBtn from "./ui/ArrowBtn";
+import { ArrowBtn } from "./ui";
 
 export const PricingBanner = () => {
     return (
         <section className="w-full bg-gray-100 py-16 px-4">
             <div className="max-w-5xl mx-auto">
-                <div
-                    className={`bg-white bg-[url('../public/img/bg-price-banner.webp')] bg-right-bottom bg-contain bg-no-repeat rounded-3xl shadow-md p-8 md:p-12 relative`}
-                >
+                <div className={`bg-white bg-[url('../public/img/bg-price-banner.webp')] bg-right-bottom bg-contain bg-no-repeat rounded-3xl shadow-md p-8 md:p-12 relative`}>
                     {/* Content */}
                     <div className="relative z-10 max-w-xl">
                         <h2 className="text-5xl md:text-4xl font-black mb-8 text-center md:text-left">Сколько стоит ваше спокойствие?</h2>

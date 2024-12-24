@@ -5,7 +5,7 @@ type TArrowBtn = {
     btnTextColor: string;
 };
 
-const ArrowBtn: FC<TArrowBtn> = ({ label, btnTextColor }) => {
+export const ArrowBtn: FC<TArrowBtn> = ({ label, btnTextColor }) => {
     return (
         <button className={`group flex items-center font-bold transition-all duration-300 ${btnTextColor}`}>
             {label}
@@ -13,5 +13,3 @@ const ArrowBtn: FC<TArrowBtn> = ({ label, btnTextColor }) => {
         </button>
     );
 };
-
-export default ArrowBtn;

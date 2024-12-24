@@ -6,9 +6,7 @@ import { logoDark, telegram } from "@/data/svg-icons";
 import { FOOTER_COL_TITLES, FOOTER_LINKS } from "@/data/footer-links";
 import isoSertified1 from "@/public/img/iso-sertified-1.svg";
 import isoSertified2 from "@/public/img/iso-sertified-2.svg";
-
-import { TrustpilotBadge } from "./TrustpilotBadge";
-import { NavColumn } from "./NavColumns";
+import { NavColumn, TrustpilotBadge } from "./ui";
 
 export const Footer = () => {
     return (

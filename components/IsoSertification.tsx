@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import medal from "@/public/icons/medal.webp";
-import ArrowBtn from "./ui/ArrowBtn";
+import { ArrowBtn } from "./ui";
 
 export const IsoCertification = () => {
     return (
