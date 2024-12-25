@@ -8,7 +8,7 @@ import CryptoNPL from "@/public/partners/cryptopnl.webp";
 import GateIO from "@/public/partners/gateio.webp";
 import KunaIO from "@/public/partners/kunaio.webp";
 import LetsExchange from "@/public/partners/letsexchange.webp";
-import Misttrack from "@/public/partners/misttrack.webp";
+// import Misttrack from "@/public/partners/misttrack.webp";
 import Purefi from "@/public/partners/purefi.webp";
 import Safe3 from "@/public/partners/safe3.webp";
 

@@ -14,7 +14,7 @@ const teamMembers = [
         role: "Co-Founder",
         linkedin: "#",
         twitter: "#",
-        image: slavaDemchuk, // Путь к картинке
+        image: slavaDemchuk,
     },
     {
         name: "Sid Panda",

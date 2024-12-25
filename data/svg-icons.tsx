@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+// TODO Create SVGIcon component
 const SVG_ICONS = {
     logoLight: (
         <svg
