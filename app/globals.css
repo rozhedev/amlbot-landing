@@ -30,5 +30,13 @@ body {
 }
 
 .sect-title {
-    @apply lg:text-4xl text-3xl font-black text-center;
+    @apply xl:text-5xl lg:text-4xl text-3xl font-black text-center;
+}
+
+.advant-item__inner {
+    @apply flex lg:flex-col md:flex-row flex-col lg:items-start md:items-center items-start sm:space-x-4 space-x-0;
+}
+
+.advant-item__inner-img {
+    @apply sm:w-40 sm:h-40 w-32 h-32 object-contain;
 }

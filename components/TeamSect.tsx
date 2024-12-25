@@ -38,14 +38,14 @@ const teamMembers = [
 
 export const TeamSect = () => {
     return (
-        <div className="bg-gray-100 py-16">
-            <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-5xl font-black text-center mb-12">Наша команда</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="bg-gray-100 lg:py-16 py-10">
+            <div className="max-w-7xl mx-auto lg:px-8 px-6">
+                <h2 className="sect-title mb-12">Наша команда</h2>
+                <div className="flex lg:justify-between justify-around lg:flex-nowrap flex-wrap xl:gap-8 gap-6">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-3xl shadow-lg"
+                            className="bg-white max-w-[270px] rounded-3xl shadow-lg"
                         >
                             <Image
                                 src={member.image}
@@ -54,9 +54,9 @@ export const TeamSect = () => {
                                 height={150}
                                 className="w-full rounded-t-3xl"
                             />
-                            <div className="p-6">
-                                <p className="mb-4 text-gray-400 font-semibold ">{member.role}</p>
-                                <h3 className="text-2xl font-semibold">{member.name}</h3>
+                            <div className="lg:p-6 p-4">
+                                <p className="xl:mb-4 mb-2 xl:text-base text-sm text-gray-400 font-semibold">{member.role}</p>
+                                <h3 className="xl:text-2xl md:text-lg font-semibold">{member.name}</h3>
                                 <div className="flex mt-4 space-x-3">
                                     {member.linkedin && (
                                         <Link

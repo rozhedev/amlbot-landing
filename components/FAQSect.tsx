@@ -12,26 +12,26 @@ export const FAQSect = () => {
 
     return (
         <div className="bg-gray-100">
-            <div className="pt-32 pb-36 px-6">
+            <div className="lg:pt-32 lg:pb-36 pt-28 pb-32 px-6">
                 <div className="mx-auto max-w-7xl">
-                    <h1 className="text-5xl text-center font-bold mb-20">Популярные вопросы</h1>
+                    <h1 className="sect-title lg:mb-20 md:mb-16 mb-10">Популярные вопросы</h1>
                 </div>
 
-                <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-[350px,1fr] gap-24">
+                <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[350px,1fr] xl:gap-24 lg:gap-12 gap-16">
                     {/* Left Side - Contact Box */}
-                    <div className="bg-blue-50 rounded-2xl py-9 px-7 h-fit">
-                        <h2 className="text-gray-800 text-2xl font-semibold mb-2">Ваш вопрос отсутствует в списке?</h2>
-                        <p className="text-lg text-gray-600 mb-6">Свяжитесь с нами через мессенджер. Мы на связи <span className="font-semibold">24/7</span>, поэтому любой вопрос можем решить быстро и в формате живого общения.</p>
+                    <div className="bg-blue-50 rounded-3xl lg:px-7 lg:py-9 px-7 py-7 h-fit">
+                        <h2 className="text-gray-800 xl:text-2xl text-lg font-semibold mb-2">Ваш вопрос отсутствует в списке?</h2>
+                        <p className="xl:text-lg text-base text-gray-600 mb-6">Свяжитесь с нами через мессенджер. Мы на связи <span className="font-semibold">24/7</span>, поэтому любой вопрос можем решить быстро и в формате живого общения.</p>
 
                         <button className="flex items-center gap-2 bg-white text-blue-500 px-4 py-2 rounded-xl">
                             <ChatBubbleLeftIcon className="w-6 h-6" />
                             <div className="text-left ml-1">
-                                <div className="text-lg font-medium">Мы в мессенджере</div>
+                                <div className="xl:text-lg text-base font-medium">Мы в мессенджере</div>
                                 <div className="text-xs font-medium text-gray-400">Ответим в течение 30 сек</div>
                             </div>
                         </button>
 
-                        <p className="text-[13px] font-medium text-gray-600 mt-4">Ответ в ночное время может занять чуть больше времени.</p>
+                        <p className="lg:text-[13px] font-medium text-gray-600 mt-4">Ответ в ночное время может занять чуть больше времени.</p>
                     </div>
 
                     {/* Right Side - FAQ Accordion */}
@@ -42,14 +42,14 @@ export const FAQSect = () => {
                                 className="border-b border-gray-200"
                             >
                                 <button
-                                    className="w-full flex justify-between items-center pt-4 pb-6 focus:ring-0"
+                                    className="w-full flex justify-between items-center lg:pt-4 lg:pb-6 pt-3 pb-5 focus:ring-0"
                                     onClick={() => toggleAccordion(item.id)}
                                 >
-                                    <span className="text-2xl font-medium text-left">{item.question}</span>
-                                    <ChevronDownIcon className={`w-8 h-8 transition-transform ${openItems.includes(item.id) ? "rotate-180" : ""}`} />
+                                    <span className="xl:text-2xl lg:text-xl text-lg font-medium text-left pr-4">{item.question}</span>
+                                    <ChevronDownIcon className={`lg:w-8 lg:h-8 lg:min-w-8 lg:min-h-8 w-5 h-5 min-w-5 min-h-5 transition-transform ${openItems.includes(item.id) ? "rotate-180" : ""}`} />
                                 </button>
 
-                                {openItems.includes(item.id) && <div className="pb-4 text-xl text-gray-500 whitespace-pre-line">{item.answer}</div>}
+                                {openItems.includes(item.id) && <div className="pb-4 xl:text-xl lg:text-lg text-base text-gray-500 whitespace-pre-line">{item.answer}</div>}
                             </div>
                         ))}
                     </div>

@@ -10,11 +10,11 @@ import { NavColumn, TrustpilotBadge } from "./ui";
 
 export const Footer = () => {
     return (
-        <footer className="bg-black text-gray-400 py-16">
+        <footer className="bg-black text-gray-400 xl:py-16 py-12">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="flex flex-wrap justify-between items-start mb-16 border-b border-gray-800">
-                    {/* Logo and Address */}
-                    <div className="flex  items-start gap-20 mb-8">
+                <div className="flex gap-6 flex-wrap xl:justify-between justify-around items-start lg:mb-12 mb-8 lg:pb-12 pb-8 border-b border-gray-800">
+                    {/* // --> Logo and Address */}
+                    <div className="flex items-start gap-20 mb-8">
                         <Link
                             href="/"
                             className="flex items-center mb-4"
@@ -28,7 +28,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Certificates and Rating */}
-                    <div className="flex items-center gap-10">
+                    <div className="flex sm:flex-row flex-col items-center gap-10">
                         <div className="gap-6 flex items-center justify-center">
                             <Image
                                 src={isoSertified1}
@@ -48,8 +48,8 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                {/* Navigation Columns */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                {/* // --> Navigation Columns */}
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:place-items-start place-items-center gap-8 lg:mb-16 mb-12">
                     {/* For Business */}
                     <NavColumn
                         label={FOOTER_COL_TITLES[0]}
@@ -75,8 +75,8 @@ export const Footer = () => {
                     />
                 </div>
 
-                {/* Footer Bottom */}
-                <div className="flex flex-wrap justify-between items-center pt-8 border-t border-gray-800">
+                {/* // --> Footer Bottom */}
+                <div className="flex md:flex-row flex-col justify-between items-center pt-8 border-t border-gray-800">
                     <div className="flex items-center gap-4">
                         <div>© 2024 AMLBot</div>
                         <Link
@@ -87,7 +87,7 @@ export const Footer = () => {
                             <span className="font-semibold text-white">Поддержка</span>
                         </Link>
                     </div>
-                    <div className="flex gap-6">
+                    <div className="flex gap-6 md:mt-0 mt-8">
                         <Link
                             href="/"
                             className="hover:text-white transition-colors"
